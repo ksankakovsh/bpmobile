@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.banner {
+    max-width: 390px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(img/main-bg.png);
+    background-size: cover;
+    padding: 28px 24px 16px 24px; 
+}
+.head {
+    margin-bottom: 40.7px;
+}
+.close {
+    display: block;
+    margin-bottom: 157px;
+}
+.close-icon {
+    stroke-width: 1px;
+    stroke: rgba(255, 255, 255, 0.4);
+}
+.content {
+    margin-bottom: 28px;
+}
+
+#title {
+    font-family: 'SF ProH';
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 110%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 104px;
+    height: 138px;
+    display: flex;
+    align-items: flex-end;
+    padding: 10.8px 7.2px;
+}
+
+.card:nth-child(1) {
+    background-image: url(img/card1.png);
+    background-size: cover;
+}
+.card:nth-child(2) {
+    background-image: url(img/card2.png);
+    background-size: cover;
+}
+.card:nth-child(3) {
+    background-image: url(img/card3.png);
+    background-size: cover;
+}
+
+.card_title {
+    font-family: 'SF ProR';
+    font-size: 11px;
+    color: #fff;
+}
+
+.offer {
+    font-family: 'SF ProR';
+    border-radius: 32px;
+    width: auto;
+    height: 56px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10.873126983642578px);
+    background: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    padding: 0 24px;
+    margin-bottom: 8px;
+    cursor: pointer;
+
+    &:hover, &.selected {
+        border: 1px solid #fff;
+        backdrop-filter: blur(10.873126983642578px);
+        background: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.offer-subtitle, .offer-price {
+    opacity: 0.7;
+}
+
+.continue {
+    display: block;
+    font-family: 'SF ProS';
+    height: 56px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background: #ffffff;
+    border-radius: 32px;
+    line-height: 56px;
+    color: #070b33;
+    font-size: 20px;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 262px;
+    margin: 0 auto;
+    font-family: 'SF ProR';
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
