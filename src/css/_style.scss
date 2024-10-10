@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .banner {
     max-width: 390px;
@@ -8,21 +9,21 @@
     margin: 0 auto;
     background-image: url(img/main-bg.png);
     background-size: cover;
-    padding: 28px 24px 16px 24px; 
+    padding: 70px 24px 16px 24px; 
 }
 .head {
     margin-bottom: 40.7px;
 }
 .close {
     display: block;
-    margin-bottom: 157px;
+    margin-bottom: 153px;
 }
 .close-icon {
     stroke-width: 1px;
     stroke: rgba(255, 255, 255, 0.4);
 }
 .content {
-    margin-bottom: 28px;
+    margin-bottom: 46px;
 }
 
 #title {
@@ -38,7 +39,7 @@
     display: flex;
     justify-content: space-between;
     color: #ffffff;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
 }
 
 .card {
@@ -80,7 +81,7 @@
     background: rgba(255, 255, 255, 0.1);
     align-items: center;
     padding: 0 24px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     cursor: pointer;
 
     &:hover, &.selected {
@@ -89,7 +90,9 @@
         background: rgba(255, 255, 255, 0.3);
     }
 }
-
+.offer-title {
+    font-size: 16px;
+}
 .offer-subtitle, .offer-price {
     opacity: 0.7;
 }
@@ -106,6 +109,7 @@
     line-height: 56px;
     color: #070b33;
     font-size: 20px;
+    margin-top: 15px;
 
     &:hover {
         background: rgba(255, 255, 255, 0.5);
@@ -119,6 +123,7 @@
     width: 262px;
     margin: 0 auto;
     font-family: 'SF ProR';
+    padding-bottom: 16px;
 }
 
 .footer-link {
