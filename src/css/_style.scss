@@ -97,6 +97,30 @@
     opacity: 0.7;
 }
 
+.offer-yearly {
+    position: relative;
+    &::before {
+        content: 'Best offer';
+        position: absolute;
+        font-family: 'SF ProS';
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #141131;
+        background-color: #ffffff;
+        border-radius: 10px;
+        height: 20px;
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.5);
+        font-weight: 700;
+        top: -10px;
+        right: 22px;
+        line-height: 19px;
+        width: 119px;
+        text-align: center;
+    }
+}
+
+
 .continue {
     display: block;
     font-family: 'SF ProS';
@@ -133,4 +157,9 @@
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
+}
+
+//languages-styles
+.en {
+
 }
