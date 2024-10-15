@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 .banner {
-    max-width: 390px;
     width: 100%;
     margin: 0 auto;
     background-image: url(img/main-bg.png);
@@ -67,10 +66,11 @@
     font-family: 'SF ProR';
     font-size: 11px;
     color: #fff;
+    letter-spacing: 0.65px;
 }
 
 .offer {
-    font-family: 'SF ProR';
+    font-family: 'SF ProS';
     border-radius: 32px;
     width: auto;
     height: 56px;
@@ -92,9 +92,11 @@
 }
 .offer-title {
     font-size: 16px;
+    font-family: 'SF ProS';
 }
 .offer-subtitle, .offer-price {
     opacity: 0.7;
+    font-family: 'SF ProR';
 }
 
 .offer-yearly {
@@ -146,7 +148,6 @@
     align-items: center;
     width: 262px;
     margin: 0 auto;
-    font-family: 'SF ProR';
     padding-bottom: 16px;
 }
 
@@ -157,9 +158,32 @@
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
+    font-family: 'SF ProR';
 }
 
 //languages-styles
 .en {
-
+    .offer {
+        padding: 0 68px 0 24px;
+    }
+}
+.de {
+    .footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding-bottom: 0;
+    }
+}
+.es, .pt {
+    .card_title {
+        font-size: 10px;
+        color: #fff;
+        letter-spacing: 0;
+    }
+}
+.fr {
+    .card_title {
+        letter-spacing: 0;
+    }
 }
