@@ -16,10 +16,14 @@ const linkForBlock2 = 'https://google.com/';
 
 offerY.addEventListener('click', function() {
       continueButton.href = linkForBlock1;
+      offerW.classList.remove('selected');
+      offerY.classList.add('selected');
   });
 
 offerW.addEventListener('click', function() {
       continueButton.href = linkForBlock2;
+      offerY.classList.remove('selected');
+      offerW.classList.add('selected');
   });
 
 const translations = {
@@ -27,8 +31,9 @@ const translations = {
     de: dataDe,
     es: dataEs,
     fr: dataFr,
+    ja: dataJa,
     pt: dataPt,
-    ja: dataJa
+  
 };
 
 function getLangFromUrl() {
@@ -42,7 +47,6 @@ function getSystemLanguage() {
 
 function switchLanguage(lang) {
   if (translations[lang]) {
-    document.body.classList.add(lang);
     document.getElementById('title').innerHTML = translations[lang]['Get Unlimited <br>Access'];
     document.getElementById('card_title1').innerHTML = translations[lang]['Unlimited Art <br>Creation'];
     document.getElementById('card_title2').innerHTML = translations[lang]['Exclusive <br>Styles'];
@@ -69,10 +73,12 @@ function initLanguage() {
     lang = getSystemLanguage();
   }
 
-  const supportedLanguages = ['en', 'de', 'pt', 'js', 'es', 'fr'];
+  const supportedLanguages = ['en', 'de', 'pt', 'ja', 'es', 'fr'];
   if (!supportedLanguages.includes(lang)) {
     lang = 'en';
   }
+
+  document.body.classList.add(lang);
   switchLanguage(lang);
 }
 window.onload = initLanguage;

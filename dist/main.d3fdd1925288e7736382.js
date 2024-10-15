@@ -10369,6 +10369,7 @@ template {
   width: 262px;
   margin: 0 auto;
   font-family: "SF ProR";
+  padding-bottom: 16px;
 }
 
 .footer-link {
@@ -10379,7 +10380,7 @@ template {
   color: rgba(255, 255, 255, 0.5);
   -webkit-text-decoration: none;
   text-decoration: none;
-}`, "",{"version":3,"sources":["webpack://./src/css/normalize.scss","webpack://./src/index.scss","webpack://./src/css/_fonts.scss","webpack://./src/css/_style.scss"],"names":[],"mappings":"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","sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/css/normalize.scss","webpack://./src/index.scss","webpack://./src/css/_fonts.scss","webpack://./src/css/_style.scss"],"names":[],"mappings":"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","sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10556,7 +10557,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 // Module
 var code = `<!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11272,41 +11273,66 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const continueButton = document.getElementById('continue');
-document.getElementById('title').innerHTML = _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__["Get Unlimited <br>Access"];
-document.getElementById('card_title1').innerHTML = _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__["Unlimited Art <br>Creation"];
-document.getElementById('card_title2').innerHTML = _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__["Exclusive <br>Styles"];
-document.getElementById('card_title3').innerHTML = _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__["Magic Avatars <br>With 20% Off"];
-document.getElementById('title-yerly').innerHTML = _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__["YEARLY ACCESS"];
-document.getElementById('subtitle-yearly').innerHTML = _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__["Just {{price}} per year"];
-document.getElementById('price-yearly').innerHTML = _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__["{{price}} <br>per week"];
-document.getElementById('price-weekly').innerHTML = _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__["{{price}} <br>per week"];
-document.getElementById('title-weekly').innerHTML = _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__["WEEKLY ACCESS"];
-continueButton.innerHTML = _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__.Continue;
-document.getElementById('term').innerHTML = _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__["Terms of Use"];
-document.getElementById('priv').innerHTML = _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__["Privacy Policy"];
-document.getElementById('restore').innerHTML = _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__.Restore;
 const offerY = document.getElementById('offer-yearly');
 const offerW = document.getElementById('offer-weekly');
-
-// function addSelectClass(element) {
-//   element.addEventListener('click', function() {
-//     element.classList.add('selected');
-//   });
-// }
-
-// addSelectClass(offerW);
-// addSelectClass(offerY);
-
 const linkForBlock1 = 'https://apple.com/';
 const linkForBlock2 = 'https://google.com/';
 offerY.addEventListener('click', function () {
-  continueButton.href = linkForBlock1; // Меняем href ссылки
+  continueButton.href = linkForBlock1;
 });
 offerW.addEventListener('click', function () {
-  continueButton.href = linkForBlock2; // Меняем href ссылки
+  continueButton.href = linkForBlock2;
 });
+const translations = {
+  en: _i18n_en_json__WEBPACK_IMPORTED_MODULE_3__,
+  de: _i18n_de_json__WEBPACK_IMPORTED_MODULE_2__,
+  es: _i18n_es_json__WEBPACK_IMPORTED_MODULE_4__,
+  fr: _i18n_fr_json__WEBPACK_IMPORTED_MODULE_5__,
+  ja: _i18n_ja_json__WEBPACK_IMPORTED_MODULE_6__,
+  pt: _i18n_pt_json__WEBPACK_IMPORTED_MODULE_7__
+};
+function getLangFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('lang');
+}
+function getSystemLanguage() {
+  return navigator.language.substring(0, 2);
+}
+function switchLanguage(lang) {
+  if (translations[lang]) {
+    document.getElementById('title').innerHTML = translations[lang]['Get Unlimited <br>Access'];
+    document.getElementById('card_title1').innerHTML = translations[lang]['Unlimited Art <br>Creation'];
+    document.getElementById('card_title2').innerHTML = translations[lang]['Exclusive <br>Styles'];
+    document.getElementById('card_title3').innerHTML = translations[lang]['Magic Avatars <br>With 20% Off'];
+    document.getElementById('title-yerly').innerHTML = translations[lang]['YEARLY ACCESS'];
+    document.getElementById('subtitle-yearly').innerHTML = translations[lang]['Just {{price}} per year'];
+    document.getElementById('price-yearly').innerHTML = translations[lang]['{{price}} <br>per week'];
+    document.getElementById('price-weekly').innerHTML = translations[lang]['{{price}} <br>per week'];
+    document.getElementById('title-weekly').innerHTML = translations[lang]['WEEKLY ACCESS'];
+    continueButton.innerHTML = translations[lang].Continue;
+    document.getElementById('term').innerHTML = translations[lang]['Terms of Use'];
+    document.getElementById('priv').innerHTML = translations[lang]['Privacy Policy'];
+    document.getElementById('restore').innerHTML = translations[lang].Restore;
+    const url = new URL(window.location);
+    url.searchParams.set('lang', lang);
+    window.history.pushState({}, '', url);
+  }
+}
+function initLanguage() {
+  let lang = getLangFromUrl();
+  if (!lang) {
+    lang = getSystemLanguage();
+  }
+  const supportedLanguages = ['en', 'de', 'pt', 'ja', 'es', 'fr'];
+  if (!supportedLanguages.includes(lang)) {
+    lang = 'en';
+  }
+  document.body.classList.add(lang);
+  switchLanguage(lang);
+}
+window.onload = initLanguage;
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=main.371d7e05f36fb9912ecf.js.map
+//# sourceMappingURL=main.d3fdd1925288e7736382.js.map
