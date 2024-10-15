@@ -206,7 +206,21 @@
   }
   
 @media only screen and (min-width: 390px) and (max-width: 430px) {
-
+    .close {
+        margin-bottom: 159px;
+    }
+    .head {
+        margin-bottom: 42.7px;
+    }
+    .cards {
+        margin-bottom: 53px;
+    }
+    .card {
+        padding: 8.8px 9.2px;
+    }
+    .content {
+        margin-bottom: 50px;
+    }
   }
 
 @media only screen and (min-width: 430px) {
