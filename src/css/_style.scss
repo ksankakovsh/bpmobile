@@ -6,29 +6,40 @@
 .banner {
     width: 100%;
     margin: 0 auto;
-    background-image: url(img/main-bg.png);
-    background-size: cover;
-    padding: 70px 24px 16px 24px; 
+    height: 100vh;
+    background-color: #000000;
+
+    &.main-bg {
+        background-image: url(img/main-bg-1.png);
+        background-size: cover;
+        padding: 4.25em 1.5em 0 1.5em; 
+    }
+
+    &.small-bg {
+        padding: 2.125em 1.5em 0.5em 1.5em;
+        background-image: url(img/main-bg-small.png);
+        background-size: cover;
+    }
 }
 .head {
     margin-bottom: 40.7px;
 }
 .close {
     display: block;
-    margin-bottom: 153px;
+    margin-bottom: 9.56em;
 }
 .close-icon {
     stroke-width: 1px;
     stroke: rgba(255, 255, 255, 0.4);
 }
 .content {
-    margin-bottom: 46px;
+    margin-bottom: 2.875em;
 }
 
 #title {
     font-family: 'SF ProH';
     font-weight: 800;
-    font-size: 42px;
+    font-size: 2.625em;
     line-height: 110%;
     text-align: center;
     color: #ffffff;
@@ -38,7 +49,7 @@
     display: flex;
     justify-content: space-between;
     color: #ffffff;
-    margin-bottom: 47px;
+    margin-bottom: 3em;
 }
 
 .card {
@@ -71,16 +82,16 @@
 
 .offer {
     font-family: 'SF ProS';
-    border-radius: 32px;
+    border-radius: 2em;
     width: auto;
-    height: 56px;
+    height: 3.5em;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
     backdrop-filter: blur(10.873126983642578px);
     background: rgba(255, 255, 255, 0.1);
     align-items: center;
-    padding: 0 24px;
+    padding: 0 1.5em;
     margin-bottom: 10px;
     cursor: pointer;
 
@@ -91,7 +102,7 @@
     }
 }
 .offer-title {
-    font-size: 16px;
+    font-size: 1em;
     font-family: 'SF ProS';
 }
 .offer-subtitle, .offer-price {
@@ -126,13 +137,13 @@
 .continue {
     display: block;
     font-family: 'SF ProS';
-    height: 56px;
+    height: 2.8em;
     width: 100%;
     text-align: center;
     text-decoration: none;
     background: #ffffff;
-    border-radius: 32px;
-    line-height: 56px;
+    border-radius: 2em;
+    line-height: 2.8em;
     color: #070b33;
     font-size: 20px;
     margin-top: 15px;
@@ -148,7 +159,7 @@
     align-items: center;
     width: 262px;
     margin: 0 auto;
-    padding-bottom: 16px;
+    padding-bottom: 1em;
 }
 
 .footer-link {
@@ -160,19 +171,42 @@
     text-decoration: none;
     font-family: 'SF ProR';
 }
+.small-bg {
+    .close {
+        margin-bottom: 4.125em;
+    }
+    .cards {
+        margin-bottom: 2.4em;
+    }
+    .content {
+        margin-bottom: 1.5em;
+    }
+    .continue {
+        margin-top: 0;
+        line-height: 2.5em;
+    }
+    .footer {
+        padding-bottom: 0;
+    }
 
+}
 //languages-styles
 .en, .ja, .es {
     .offer {
-        padding: 0 60px 0 24px;
+        padding: 0 4.15em 0 1.5em;
     }
 }
 .de {
+    .content {
+        margin-bottom: 1em;
+    }
+
     .footer {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        gap: 6px;
         padding-bottom: 0;
+        width: 22.25em;
     }
 }
 .es, .pt {
@@ -183,46 +217,72 @@
     }
 }
 .fr {
-    .card_title {
-        letter-spacing: 0;
+    .footer {
+        width: 2.25em;
     }
+}
+@media only screen and (min-resolution: 192dpi),
+       only screen and (min-resolution: 2dppx) { 
+        .banner {
+            &.main-bg {
+                background-image: url(img/main-bg.png);
+            }
+        
+            &.small-bg {
+                background-image: url(img/main-bg-small-1.png);
+            }
+        }
+
+        .card:nth-child(1) {
+            background-image: url(img/card1x2.png);
+            background-size: cover;
+        }
+        .card:nth-child(2) {
+            background-image: url(img/card2x2.png);
+            background-size: cover;
+        }
+        .card:nth-child(3) {
+            background-image: url(img/card3x2.png);
+            background-size: cover;
+        }
 }
 
 @media only screen and (max-width: 375px) {
+
     .banner {
-        padding: 34px 24px 16px 24px;
-        background-image: url(img/main-bg-small.png);
-    }
-    .close {
-        margin-bottom: 67px;
-    }
-    .continue {
-        margin-top: 0;
-    }
-    .content {
-        margin-bottom: 29px;
+    
+        &.main-bg {
+            padding: 3em 1.5em 0 1.5em; 
+        }
     }
 
-  }
-  
-@media only screen and (min-width: 390px) and (max-width: 430px) {
-    .close {
-        margin-bottom: 159px;
-    }
-    .head {
-        margin-bottom: 42.7px;
-    }
-    .cards {
-        margin-bottom: 53px;
-    }
-    .card {
-        padding: 8.8px 9.2px;
-    }
-    .content {
-        margin-bottom: 50px;
-    }
-  }
+    .de, .fr {
+        .banner {
+            &.main-bg {
+                padding: 0.4em 1.5em 0 1.5em;
+                height: auto; 
+                background-color: #000000;
 
-@media only screen and (min-width: 430px) {
-  
+                .footer {
+                    gap: 8px;
+                    padding-bottom: 1em;
+                    width: 21.25em;
+                }
+            }
+
+            &.small-bg {
+                padding: 0.4em 1.5em 0 1.5em;
+                height: auto;
+                background-color: #000000;
+                .close {
+                    margin-bottom: 3.2em;
+                }
+                .footer {
+                    gap: 8px;
+                    padding-bottom: 1em;
+                    width: 21.25em;
+                }
+            }
+        }
+    }
   }

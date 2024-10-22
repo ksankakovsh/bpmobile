@@ -47,19 +47,14 @@ function getSystemLanguage() {
 
 function switchLanguage(lang) {
   if (translations[lang]) {
-    document.getElementById('title').innerHTML = translations[lang]['Get Unlimited <br>Access'];
-    document.getElementById('card_title1').innerHTML = translations[lang]['Unlimited Art <br>Creation'];
-    document.getElementById('card_title2').innerHTML = translations[lang]['Exclusive <br>Styles'];
-    document.getElementById('card_title3').innerHTML = translations[lang]['Magic Avatars <br>With 20% Off'];
-    document.getElementById('title-yerly').innerHTML = translations[lang]['YEARLY ACCESS'];
-    document.getElementById('subtitle-yearly').innerHTML = translations[lang]['Just {{price}} per year'];
-    document.getElementById('price-yearly').innerHTML = translations[lang]['{{price}} <br>per week'];
-    document.getElementById('price-weekly').innerHTML = translations[lang]['{{price}} <br>per week'];
-    document.getElementById('title-weekly').innerHTML = translations[lang]['WEEKLY ACCESS'];
-    continueButton.innerHTML = translations[lang].Continue;
-    document.getElementById('term').innerHTML = translations[lang]['Terms of Use'];
-    document.getElementById('priv').innerHTML = translations[lang]['Privacy Policy'];
-    document.getElementById('restore').innerHTML = translations[lang].Restore;
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+      const translationKey = element.getAttribute('data-i18n');
+      const translation = translations[lang][translationKey];
+
+      if (translation) {
+        element.innerHTML = translation.replace(/&lt;br&gt;/g, '<br>');
+      }
+    });
     const url = new URL(window.location);
     url.searchParams.set('lang', lang);
     window.history.pushState({}, '', url);
@@ -82,3 +77,25 @@ function initLanguage() {
   switchLanguage(lang);
 }
 window.onload = initLanguage;
+
+function detectScreenSize() {
+  
+  const screenWidth = window.screen.width;
+  const screenHeight = window.screen.height;
+  const banner = document.getElementById('banner');
+  const toggleClass = function(element, class1, class2) {
+    return (
+      element.classList.add(class1),
+      element.classList.remove(class2)
+    )
+  };
+  if ((screenWidth === 375 && screenHeight === 667) || (screenWidth === 414 && screenHeight === 736)) {
+    toggleClass(banner, 'small-bg', 'main-bg')
+
+  } else {
+    toggleClass(banner, 'main-bg', 'small-bg')
+  }
+}
+
+detectScreenSize();
+window.addEventListener('resize', detectScreenSize);
